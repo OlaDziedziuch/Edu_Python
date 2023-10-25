@@ -15,3 +15,20 @@ def count_positives_sum_negatives(arr):
 print(count_positives_sum_negatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]))      # ➞ [10, -65]
 print(count_positives_sum_negatives([1, 2, 3]))                                                     # ➞ [3, 0]
 print(count_positives_sum_negatives([]))                                                            # ➞ []
+
+
+def count_positives_sum_negatives_another_solution(arr):
+    if not arr: return []
+    positive = 0
+    negative = 0
+    for element in arr:
+        if element > 0:
+            positive += 1
+        else:
+            negative += 1
+    return [positive, negative]
+
+
+print(count_positives_sum_negatives_another_solution([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]))      # ➞ [10, -65]
+print(count_positives_sum_negatives_another_solution([1, 2, 3]))                                                     # ➞ [3, 0]
+print(count_positives_sum_negatives_another_solution([]))                                                            # ➞ []

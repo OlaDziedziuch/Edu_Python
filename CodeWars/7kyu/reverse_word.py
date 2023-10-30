@@ -15,8 +15,3 @@ def uppercase_letter(password):
 
 
 print(uppercase_letter("This is an example!"))
-
-# 1) create new string separated by space
-# 2) join all it
-# 3) reverse the word
-# 4) for each split the word

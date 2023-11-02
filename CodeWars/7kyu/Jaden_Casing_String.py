@@ -7,6 +7,6 @@
 # The strings are actual quotes from Jaden Smith, but they are not capitalized in the same way he originally typed them.
 
 def to_jaden_case(string):
-    return ' '.join(w[0].upper() + w[1:] for w in string.split())
+    return " ".join([first_letter.capitalize() for first_letter in string.split()])
 
 print(to_jaden_case("How can mirrors be real if our eyes aren't real"))     # ➞ How Can Mirrors Be Real If Our Eyes Aren't Real

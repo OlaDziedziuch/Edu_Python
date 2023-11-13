@@ -25,3 +25,18 @@ print(fizz_buzz(3))                 # ➞ Fizz
 print(fizz_buzz(5))                 # ➞ Buzz
 print(fizz_buzz(15))                # ➞ FizzBuzz
 print(fizz_buzz(4))                 # ➞ 4
+
+def test_fizz_buzz():
+    fizz_buzz_test_data = [3, 5, 15, 4]
+    fizz_buzz_test_results = ["Fizz", "Buzz","FizzBuzz", "4"]
+    for i in range(len(fizz_buzz_test_data)):
+        txt = fizz_buzz_test_data[i]
+        print("Test for:", txt, "➞", end="")
+        result = fizz_buzz(txt)
+        if result == fizz_buzz_test_results[i]:
+            print("Passed")
+        else:
+            print("Failed")
+
+test_fizz_buzz()
+

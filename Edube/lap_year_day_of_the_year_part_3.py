@@ -7,7 +7,6 @@ def days_in_month(year, month):
         return 28
     return 30
 
-
 def day_of_year(year, month, day):
     days = 0
     for i in range(1, month):
